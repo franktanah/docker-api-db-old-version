@@ -9,12 +9,12 @@
 `docker run --name mymongo -d mongo`
 `docker exec -it mymongo mongo`
 
-### Switch to (or create) DB
+## Switch to (or create) DB
 `use test`
 
 ## Create a Collection & Add Data
 `db.students.insert({"name": "Kelly", "email": "kellyml91@yahoo.com"})`
 `db.students.insert({"name": "Jason", "email": "jdoerr@gmail.com"})`
 
-## Create a Collection & Add Data
+## Query Data
 `db.students.find()`
