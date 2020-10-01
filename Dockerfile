@@ -1,3 +1,6 @@
+FROM mongo
+COPY data.json /home/user/data.json
+
 FROM ubuntu:18.04
 MAINTAINER uli.hitzel@gmail.com
 EXPOSE 8080
@@ -9,17 +12,19 @@ RUN apt-get install -y nodejs npm
 ENV USER root
 RUN npm install -g express-generator
 RUN npm install express --save
-RUN apt-get install -y mongodb
 RUN useradd -ms /bin/bash user
 COPY app.js /home/user/app.js
 COPY start.sh /home/user/start.sh
 COPY run-mongo.sh /home/user/run-mongo.sh
-COPY data.json /home/user/data.json
+# COPY data.json /home/user/data.json
 RUN chmod a+x /home/user/start.sh
 USER user
 WORKDIR /home/user
 
 CMD ["sh","/home/user/start.sh"]
+
+
+
 
 
 
