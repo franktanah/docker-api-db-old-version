@@ -7,6 +7,7 @@
 Steps to run
 ## Clone the files to the cloud
 `git clone https://github.com/franktanah/docker-api-db-old-version`
+
 `cd docker-api-db-old-version`
 
 ## Build and Tag the docker image
