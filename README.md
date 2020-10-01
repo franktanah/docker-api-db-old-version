@@ -2,4 +2,19 @@
 
 `docker run -d -p 8080:8080 <Image Name>`
 
+## To run APIs
 `curl -i http://localhost:8080/fx`
+
+## To run MongoDB
+`docker run --name mymongo -d mongo`
+`docker exec -it mymongo mongo`
+
+### Switch to (or create) DB
+`use test`
+
+## Create a Collection & Add Data
+`db.students.insert({"name": "Kelly", "email": "kellyml91@yahoo.com"})`
+`db.students.insert({"name": "Jason", "email": "jdoerr@gmail.com"})`
+
+## Create a Collection & Add Data
+`db.students.find()`
