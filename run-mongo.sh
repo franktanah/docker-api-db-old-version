@@ -6,5 +6,5 @@ docker exec -it <container-name-or-id> sh
 
 cat data.json
 
-mongoimport -d test -c inventory --file data.json --jsonArray
+mongoimport --host mongodb --db test --collection inventory --file /data.json --jsonArray
 
