@@ -1,4 +1,4 @@
-# Uaing APIs to access MongoDB
+# A container that allows APIs to access MongoDB
 
 `docker run -d -p 8080:8080 <Image Name>`
 
