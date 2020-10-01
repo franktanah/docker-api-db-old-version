@@ -7,6 +7,7 @@
 
 ## To run MongoDB
 `docker run --name mymongo -d mongo`
+
 `docker exec -it mymongo mongo`
 
 ## Switch to (or create) DB
@@ -14,6 +15,7 @@
 
 ## Create a Collection & Add Data
 `db.students.insert({"name": "Kelly", "email": "kellyml91@yahoo.com"})`
+
 `db.students.insert({"name": "Jason", "email": "jdoerr@gmail.com"})`
 
 ## Query Data
