@@ -9,7 +9,7 @@ RUN apt-get install -y nodejs npm
 ENV USER root
 RUN npm install -g express-generator
 RUN npm install express --save
-RUN apt-get install -y mongodb-org
+RUN apt-get install -y mongodb
 RUN systemctl start mongod
 RUN systemctl enable mongod
 RUN useradd -ms /bin/bash user
