@@ -11,6 +11,8 @@ Steps to run
 `cd docker-api-db-old-version`
 
 ## Build and Tag the docker image
+`docker build .`
+
 `docker tag <IMAGE_ID> <YOUR_USERNAME>:latest`
 
 ## Create Container
