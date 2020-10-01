@@ -16,7 +16,7 @@ Steps to run
 `docker tag <IMAGE_ID> <YOUR_USERNAME>:latest`
 
 ## Create Container
-`docker run -d -p 8090:8080 <Image Name or YOUR_USERNAME>`
+`docker run -d -p 8090:8080 <YOUR_USERNAME or Repository Name>`
 
 ## To run APIs
 `curl -i http://localhost:8090/fx`
