@@ -12,6 +12,7 @@ RUN npm install express --save
 RUN useradd -ms /bin/bash user
 COPY app.js /home/user/app.js
 COPY start.sh /home/user/start.sh
+COPY run-mongo.sh /home/user/run-mongo.sh
 RUN chmod a+x /home/user/start.sh
 USER user
 WORKDIR /home/user
