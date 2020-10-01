@@ -1,9 +1,9 @@
 # A container that allows APIs to access MongoDB
 
-`docker run -d -p 8080:8080 <Image Name>`
+`docker run -d -p 8090:8080 <Image Name>`
 
 ## To run APIs
-`curl -i http://localhost:8080/fx`
+`curl -i http://localhost:8090/fx`
 
 ## To run MongoDB
 `docker run --name mymongo -d mongo`
